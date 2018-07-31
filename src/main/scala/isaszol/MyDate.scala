@@ -16,8 +16,8 @@ object MyDate {
   private val DayOfWeeks = Weekdays ++ Weekend
   private val NextDayOfWeek = DayOfWeeks.zip(DayOfWeeks.tail :+ "Monday").toMap
   // Number of days in a month
-  private val NumberOfDaysPerMonthInLeapYear = numberOfDaysPerMonthInYear(29)
-  private val NumberOfDaysPerMonthInNormalYear = numberOfDaysPerMonthInYear(28)
+  private val NumberOfDaysPerMonthInLeapYear = numberOfDaysPerMonthInYear(daysInFebruary = 29)
+  private val NumberOfDaysPerMonthInNormalYear = numberOfDaysPerMonthInYear(daysInFebruary = 28)
 
   private def numberOfDaysPerMonthInYear(daysInFebruary: Int) = Seq(31, daysInFebruary, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
   // year end

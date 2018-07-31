@@ -11,8 +11,8 @@ case class MyMilitaryTime(hoursAndMinutes: Int)
 
 object MyMilitaryTime {
 
-  private val StartOfOfficeHours = toMilitaryTime(9)
-  private val EndOfOfficeHours = toMilitaryTime(17)
+  private val StartOfOfficeHours = toMilitaryTime(hours = 9)
+  private val EndOfOfficeHours = toMilitaryTime(hours = 17)
   private val PlusOneDay = 1
   private val NoRollForward = 0
 

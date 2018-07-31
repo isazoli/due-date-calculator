@@ -6,7 +6,7 @@ object DueDateCalculator {
 
   private val WorkingHoursPerDay = 8
 
-  def dueDate(submitDateAndTime: DateAndTime, turnaroundInHours: Int): DateAndTime = {
+  def determineDueDateFor(submitDateAndTime: DateAndTime, turnaroundInHours: Int): DateAndTime = {
     val DateAndTime(submitDate, submitTime) = submitDateAndTime
     val wholeWorkingDays = turnaroundInHours / WorkingHoursPerDay
     val plusHours = turnaroundInHours % WorkingHoursPerDay
@@ -21,4 +21,4 @@ object DueDateCalculator {
 
 }
 
-case class DateAndTime(myDate: MyDate, myTime: MyMilitaryTime)
+case class DateAndTime(date: MyDate, time: MyMilitaryTime)
