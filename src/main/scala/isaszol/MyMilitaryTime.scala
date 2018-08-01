@@ -4,6 +4,7 @@ import com.google.common.annotations.VisibleForTesting
 
 /**
   * Time represented in "Military time" form.
+  * Examples: 9:01AM is represented with MyMilitaryTime(901) and 2:12PM with MyMilitaryTime(1412).
   *
   * @see http://militarytimegeek.com/military-time.html
   */
